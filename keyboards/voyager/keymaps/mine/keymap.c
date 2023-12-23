@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [LAYER_SHIFT] = LAYOUT_voyager(
     KC_TRANSPARENT, KC_EXLM,        TD(DANCE_AT),   KC_HASH,        TD(DANCE_DLR),  KC_PERC,                                        SE_CIRC,        SE_AMPR,        SE_ASTR,        SE_LPRN,        SE_RPRN,        KC_TRANSPARENT,
-    SE_TILD,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_EQL,
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_EQL,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_COLN,        SE_DQUO,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, TD(DANCE_LT),   SE_RABK,        SE_QUES,        SE_GRV,
                                                     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
@@ -70,15 +70,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [LAYER_CTL] = LAYOUT_voyager(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_LBRC,        SE_RBRC,
-    KC_LSFT,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, LSFT(SE_LBRC),  LSFT(SE_RBRC),
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+    KC_LSFT,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_LBRC,        SE_RBRC,
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, LSFT(SE_LBRC),  LSFT(SE_RBRC),
                                                     KC_ENTER, KC_TRANSPARENT,                                       KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [LAYER_OS] = LAYOUT_voyager(
-    LGUI(KC_ESCAPE),LGUI(KC_1),     LGUI(KC_2),     LGUI(KC_3),     LGUI(KC_4),     LGUI(KC_5),                                     LGUI(KC_6),     LGUI(KC_7),     LGUI(KC_8),     LGUI(KC_9),     LGUI(KC_0),     KC_TRANSPARENT,
-    LGUI(KC_TAB),   LGUI(KC_Q),     LGUI(KC_W),     LGUI(KC_E),     LGUI(KC_R),     LGUI(KC_T),                                     LGUI(KC_Y),     LGUI(KC_U),     LGUI(KC_I),     LGUI(KC_O),     SE_LBRC,        SE_RBRC,
-    KC_LSFT,        LGUI(KC_A),     LGUI(KC_S),     LGUI(KC_D),     LGUI(KC_F),     LGUI(KC_G),                                     LGUI(KC_H),     LGUI(KC_J),     LGUI(KC_K),     LGUI(KC_L),     SE_LCBR ,       SE_RCBR,
+    LGUI(KC_ESCAPE),LGUI(KC_1),     LGUI(KC_2),     LGUI(KC_3),     LGUI(KC_4),     LGUI(KC_5),                                     LGUI(KC_6),     LGUI(KC_7),     LGUI(KC_8),     SE_LPRN,        SE_RPRN,        SE_EQL,
+    LGUI(KC_TAB),   LCTL(KC_Q),     LGUI(KC_W),     LGUI(KC_E),     LGUI(KC_R),     LGUI(KC_T),                                     LGUI(KC_Y),     LGUI(KC_U),     LGUI(KC_I),     LGUI(KC_O),     SE_LBRC,        SE_RBRC,
+    KC_LSFT,        LCTL(KC_A),     LCTL(KC_S),     LGUI(KC_D),     LGUI(KC_F),     LGUI(KC_G),                                     LGUI(KC_H),     LGUI(KC_J),     LGUI(KC_K),     LGUI(KC_L),     SE_LCBR ,       SE_RCBR,
     KC_NO,          LCTL(KC_Z),     LCTL(KC_X),     LCTL(KC_C),     LCTL(KC_V),     LCTL(KC_B),                                     LCTL(KC_N),     LCTL(KC_M),     KC_TRANSPARENT, SE_BSLS,        SE_PIPE ,       KC_TRANSPARENT,
                                                                     LGUI(KC_ENTER), KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT
   ),
@@ -93,8 +93,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESCAPE,      KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,                                          KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,
     SE_GRV,         KC_EXLM,        SE_AT,          SE_EURO,        SE_EURO,        KC_PERC,                                        KC_7,           KC_8,           KC_9,           SE_MINS,        SE_SLSH,        KC_F12,
     KC_TRANSPARENT, KC_CIRC,        SE_AMPR,        SE_ASTR,        SE_LPRN,        SE_RPRN,                                        KC_4,           KC_5,           KC_6,           SE_PLUS,        SE_ASTR,        KC_BACKSPACE,
-    KC_TRANSPARENT, SE_TILD,        SE_LBRC,        SE_RBRC,        SE_LCBR,        SE_RCBR,                                        KC_1,           KC_2,           KC_3,           KC_DOT,         SE_EQL,         KC_ENTER,
-                                                                    KC_TRANSPARENT, KC_TRANSPARENT,                 KC_DELETE,      KC_0
+    KC_TRANSPARENT, SE_TILD,        SE_LBRC,        SE_RBRC,        SE_LCBR,        SE_RCBR,                                        KC_1,           KC_2,           KC_3,           KC_DOT,         SE_BSLS,         KC_ENTER,
+                                                                    KC_LALT,        KC_LCTL,                        KC_DELETE,      KC_0
   ),
   [LAYER_SYS] = LAYOUT_voyager(
     RGB_TOG,        TOGGLE_LAYER_COLOR,         RGB_MOD,            RGB_SLD,            RGB_VAD,            RGB_VAI,                            KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_AUDIO_MUTE,  KC_AUDIO_VOL_UP,
@@ -116,8 +116,8 @@ void keyboard_post_init_user(void) {
 const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     [LAYER_ALT] = {
         {0,0,0}, {0,0,255}, {0,0,255}, {0,0,255}, {0,0,255}, {0,0,255},
-        {0,0,0}, {0,245,245}, {131,255,255}, {0,0,0}, {0,0,0}, {0,0,0},
-        {0,0,0}, {74,255,255}, {0,0,0}, {169,255,255}, {41,255,255}, {131,255,255},
+        {169,255,255}, {0,245,245}, {131,255,255}, {0,0,0}, {0,0,0}, {0,0,0},
+        {169,255,255}, {74,255,255}, {0,0,0}, {169,255,255}, {41,255,255}, {131,255,255},
         {0,0,0}, {0,0,0}, {0,0,0}, {152,255,255}, {131,255,255}, {0,0,0},
         {0,0,0}, {0,0,0},
 
